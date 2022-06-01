@@ -52,8 +52,14 @@ class CastepCommonRelaxInputGenerator(CommonRelaxInputGenerator):
         spec.input(
             'protocol',
             valid_type=ChoiceType((
-                'fast', 'moderate', 'precise', 'verification-PBE-v1', 'verification-PBE-v1-a0',
-                'verification-PBE-v1-dojo-a0'
+                'fast',
+                'moderate',
+                'precise',
+                'verification-PBE-v1',
+                'verification-PBE-v1-a0',
+                'verification-PBE-v1-dojo-a0',
+                'verification-PBE-v1-dojo-a1',
+                'verification-PBE-v1-qc5-a0',
             )),
             default='moderate',
             help='The protocol to use for the automated input generation. This value indicates the level of precision '
