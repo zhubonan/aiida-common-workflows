@@ -145,7 +145,9 @@ verification-PBE-v1-dojo-a0:
                     symmetry_generate: true
                     snap_to_symmetry: true
                     calculate_stress: true
-                    cut_off_energy: 800              # Fixed cut off energy for handling both unaries and oxides
+                    # This cut off energy has no effect as the cutoff_stringency takes the precedence
+                    # The actual cut off energy used depends on the speices involved in the calculation
+                    cut_off_energy: 800
                     write_otfg: false
                     opt_strategy: speed
                     write_bib: false
@@ -184,7 +186,9 @@ verification-PBE-v1-dojo-a1:
                     symmetry_generate: true
                     snap_to_symmetry: true
                     calculate_stress: true
-                    cut_off_energy: 800              # Fixed cut off energy for handling both unaries and oxides
+                    # This cut off energy has no effect as the cutoff_stringency takes the precedence
+                    # The actual cut off energy used depends on the speices involved in the calculation
+                    cut_off_energy: 800
                     write_otfg: false
                     opt_strategy: speed
                     write_bib: false
